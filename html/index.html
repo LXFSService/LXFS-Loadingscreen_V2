@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background">
+        <video id="bgVideo" loop muted></video>
+        <img id="bgImage"/>
+    </div>
+
+    <div id="logoContainer">
+        <img id="logo"/>
+        <h1 id="serverName"></h1>
+    </div>
+
+<div id="loadingCircleContainer">
+    <div id="loadingCircle"></div>
+    <div id="loadingBar">
+        <div id="loadingProgress"></div>
+    </div>
+    <!-- NEU: Prozentanzeige im Kreis -->
+    <div id="progressPercent">0%</div>
+    <!-- /NEU -->
+    <p id="musicHint">Press SPACE, to start or stop the music.</p>
+</div>   
+
+    <audio id="music" loop></audio>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+</body>
+ 
+</html>
